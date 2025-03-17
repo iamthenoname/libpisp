@@ -336,7 +336,7 @@ void BackEnd::initialiseDefaultConfig(const std::string &filename)
 			if (path.empty())
 				throw std::runtime_error("BE: Could not determine the local source path");
 
-			file = path + "/share/libpisp/backend/backend_default_config.json"; // XXX
+			file = path + "/share/libpisp/backend_default_config.json"; // XXX
 		}
 		else
 			file = std::string(PISP_BE_CONFIG_DIR) + "/" + "backend_default_config.json";
