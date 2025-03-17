@@ -1,4 +1,3 @@
-
 /* SPDX-License-Identifier: BSD-2-Clause */
 /*
  * Copyright (C) 2021 - 2023, Raspberry Pi Ltd
@@ -65,7 +64,7 @@ std::string source_path()
 	path.erase(pos, path.length() - pos);
 
 	// XXX what the hell is this hardcoded ahh code
-	const pos = path.find_last_of('/');
+	auto const pos2 = path.find_last_of('/');
 	if (pos == std::string::npos)
 		return {};
 	path.erase(pos, path.length() - pos);
