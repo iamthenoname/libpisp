@@ -65,9 +65,9 @@ std::string source_path()
 
 	// XXX what the hell is this hardcoded ahh code
 	auto const pos2 = path.find_last_of('/');
-	if (pos == std::string::npos)
+	if (pos2 == std::string::npos)
 		return {};
-	path.erase(pos, path.length() - pos);
+	path.erase(pos2, path.length() - pos2);
 	
 	return path;
 }
